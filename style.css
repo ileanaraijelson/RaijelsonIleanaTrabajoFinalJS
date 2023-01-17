@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+* {
+    Margin: 0px;
+    padding: 0;
+    }
+
+body{
+    font-family: 'Caveat', cursive;
+    background-color: #f5f3f3;
+    
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    z-index: 99;
+    padding: 50px;
+}
+
+.logo{
+    cursor: pointer;
+
+}
+
+.cart:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+footer{
+    color: white;
+    background-color: #99CC66;
+    cursor: pointer;
+    text-decoration: none;
+    
+  display: grid;
+  justify-content: left;
+  align-items: left;
+  justify-items: left;
+
+  padding: 2%;
+  }
+
+  footer .titufoot {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .contenedorCards{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  }
+  .card{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width:80%;
+    margin: 20px;
+    
+  }
+  .card-img-top{
+    width: 80px;
+    height: 80px;
+  }
+
+
+.modal-container{
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color:black;
+  background-color: #99CC66;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+  display: none;
+}
+
+.modal-header{
+  display: flex;
+  justify-content: space-around;
+  background-color:#69c0d6;
+  color: #fff;
+  width: 100%;
+}
+
+.modal-header-title{
+  justify-self: start;
+}
+
+.modal-header-button{
+  cursor: pointer;
+}
+
+.modal-container > .modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+
+}
+
+.modal-container > div > img{
+  height: 120px;
+  width: 120px;
+}
+
+.total-content {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.delete-product{
+  cursor: pointer;
+}
+
+.cantidad-carrito{
+  background-color: #99CC66;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 12px;
+  padding: 4px;
+  top:37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
+
+
+.formaBotonRestar{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #99CC66;
+  border-color: none;
+  border-style: none;
+
+}
+
+.formaBotonSumar{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #99CC66;
+  border-color: none;
+  border-style: none;
+
+}
+
+.delete-product{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color:white;
+  border-color: none;
+  border-style: none;
+}

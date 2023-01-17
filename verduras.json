@@ -1,0 +1,6 @@
+[
+    {"id":1,"nombre":"lechuga","precio":100,"peso": "1kg","img": "img/lechuga.png","cantidad": 1 },
+    {"id":2,"nombre":"tomate","precio":150,"peso": "1kg","img": "img/tomate.png","cantidad": 1 },
+    {"id":3,"nombre":"zanahoria","precio":120,"peso": "1kg","img": "img/zanahoria.png","cantidad": 1},
+    {"id":4,"nombre":"pepino","precio":80,"peso": "1kg","img": "img/pepino.png","cantidad": 1 }
+]
