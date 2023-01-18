@@ -169,3 +169,16 @@ footer{
   border-color: none;
   border-style: none;
 }
+
+
+.pagar{
+ 
+  text-decoration: none;
+  color: white;
+  background-color: #69c0d6;
+  border-radius: 1rem;
+  width: 100px;
+  height: 33px;
+  text-align: center;
+  
+}

@@ -151,6 +151,12 @@ const totalBuying = document.createElement("div")
 totalBuying.className="total-content"
 totalBuying.innerHTML=`total a pagar: ${total} $`;
 modalContainer.append(totalBuying);
+const botonPagar= document.createElement("a")
+botonPagar.target="-blank"
+botonPagar.href="https://www.mercadopago.com.ar/"
+botonPagar.className="pagar"
+botonPagar.innerHTML=`pagar`
+modalContainer.append(botonPagar)
 };
 
 verCarrito.addEventListener("click", pintarCarrito);
