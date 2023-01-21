@@ -109,8 +109,9 @@ fetchData();
         let restar= carritoContent.querySelector(".formaBotonRestar");
 
         restar.addEventListener("click", ()=>{
-            if(verdu.cantidad !== 1){
-            verdu.cantidad -- ;}
+
+            verdu.cantidad !== 1 && verdu.cantidad -- ;
+
             pintarCarrito();
             GuardarLocal();
         });
@@ -188,4 +189,63 @@ localStorage.setItem("carrito", JSON.stringify(carrito));
 
 carritoCounter();
 
+
+function suscribirse(){
+    var nombreUser = document.getElementById("nombre").value ;
+    var celuUser =document.getElementById("celu").value;
+    if (nombreUser == ""){
+        Toastify({
+            text: "el nombre es obligatorio",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top", 
+            position: "center", 
+            stopOnFocus: true, 
+            style: {
+            background: "linear-gradient(to right, red, red)",
+            },
+            onClick: function(){} 
+        }).showToast();
+    
+    document.getElementById("nombre").focus();
+
+    }else{
+        if (celuUser == ""){
+            Toastify({
+                text: "el celular es obligatorio",
+                duration: 3000,
+                newWindow: true,
+                close: true,
+                gravity: "top", 
+                position: "right", 
+                stopOnFocus: true, 
+                style: {
+                background: "linear-gradient(to right, red, red)",
+                },
+                onClick: function(){} 
+            }).showToast();
+            document.getElementById("celu").focus(); 
+}else{
+
+document.getElementById("nombre").value= "";
+document.getElementById("celu").value= "";
+document.getElementById("nombre").focus();
+document.getElementById("celu").focus();
+Toastify({
+    text: "Gracias por suscribirte"+ " " +nombreUser + "le estaremos enviando las promos al"+" "+celuUser,
+    duration: 3000,
+    newWindow: true,
+    close: true,
+    gravity: "center",
+    position: "center",
+    stopOnFocus: true,
+    style: {
+        background: "linear-gradient(to right, green, green)",
+    },
+    onClick: function () {},
+}).showToast();
+}
+}
+}
 
